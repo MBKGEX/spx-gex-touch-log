@@ -1,0 +1,41 @@
+name: gex-touch-log
+
+on:
+  schedule:
+    # GitHub cron runs in UTC. Each job is listed twice so it lands at the right Eastern
+    # time on both sides of daylight saving; the script ignores the run that falls outside its window.
+    - cron: "45 13 * * 1-5"   # 9:45 ET (EDT) morning snapshot
+    - cron: "45 14 * * 1-5"   # 9:45 ET (EST) morning snapshot
+    - cron: "40 20 * * 1-5"   # 4:40 PM ET (EDT) review + summary
+    - cron: "40 21 * * 1-5"   # 4:40 PM ET (EST) review + summary
+  workflow_dispatch:
+    inputs:
+      task:
+        description: "auto | snapshot | review | summary"
+        default: "auto"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: gex-touch-log
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python gex_tracker.py ${{ github.event.inputs.task || 'auto' }}
+      - name: Commit new data
+        run: |
+          git config user.name "gex-log-bot"
+          git config user.email "gex-log-bot@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "log $(TZ=America/New_York date '+%F %H:%M') ET"
+          git push
