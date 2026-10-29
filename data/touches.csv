@@ -1,0 +1,5 @@
+date,level_type,level_price,regime,touch_time,minute_of_session,approach,close_at_touch,result,minutes_to_result,bounce_15m,through_15m,bounce_30m,through_30m,bounce_60m,through_60m,window_truncated
+2026-10-29,0dte_put_wall,7700.0,negative,13:46,256,from_above,7701.02,break,10.0,1.05,9.06,3.21,9.06,3.21,9.06,False
+2026-10-29,0dte_put_wall,7700.0,negative,14:00,270,from_below,7697.17,reject,2.0,6.03,3.21,6.03,3.21,8.22,3.42,False
+2026-10-29,0dte_put_wall,7700.0,negative,14:51,321,from_below,7700.26,chop,,1.21,3.42,3.29,4.69,3.29,15.31,False
+2026-10-29,gamma_flip,7729.24,negative,11:30,120,from_below,7730.22,reject,6.0,11.62,2.97,14.47,2.97,16.24,2.97,False
