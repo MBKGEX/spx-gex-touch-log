@@ -3,3 +3,10 @@ date,level_type,level_price,regime,touch_time,minute_of_session,approach,close_a
 2026-10-29,0dte_put_wall,7700.0,negative,14:00,270,from_below,7697.17,reject,2.0,6.03,3.21,6.03,3.21,8.22,3.42,False
 2026-10-29,0dte_put_wall,7700.0,negative,14:51,321,from_below,7700.26,chop,,1.21,3.42,3.29,4.69,3.29,15.31,False
 2026-10-29,gamma_flip,7729.24,negative,11:30,120,from_below,7730.22,reject,6.0,11.62,2.97,14.47,2.97,16.24,2.97,False
+2026-10-30,0dte_put_wall,7600.0,negative,11:40,130,from_above,7600.13,break,25,2.21,5.03,3.73,7.22,3.73,9.81,False
+2026-10-30,0dte_put_wall,7600.0,negative,12:28,178,from_below,7599.17,reject,8,5.11,3.61,23.06,3.61,25.81,3.61,False
+2026-10-30,major_2,7550.0,negative,14:17,287,from_above,7548.52,break,7,0.0,15.41,0.0,20.44,8.66,22.44,False
+2026-10-30,major_2,7550.0,negative,15:07,337,from_below,7551.31,break,5,8.2,8.66,8.2,11.58,8.2,38.76,True
+2026-10-30,major_2,7550.0,negative,15:29,359,from_above,7551.96,reject,5,11.58,2.77,38.76,2.77,38.76,2.77,True
+2026-10-30,major_3,7590.0,negative,12:11,161,from_above,7590.72,reject,4,6.99,0.0,13.61,0.0,13.61,15.07,False
+2026-10-30,major_3,7590.0,negative,12:46,196,from_above,7586.37,break,6,0.0,13.06,0.0,15.81,0.0,20.13,False
