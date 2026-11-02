@@ -47,7 +47,7 @@ CFG = {
     "flip_sweep": 0.06,       # search +/-6% of spot for the zero-gamma flip
     "major_band": 0.03,       # 'major' strikes must sit within +/-3% of spot
     "n_major": 3,
-    "n_control": 4,           # random baseline levels per day
+    "n_control": 8,           # random baseline levels per day (was 4; more = faster fair comparison)
     "level_gap": 10.0,        # min pts between majors/controls and any other level
     "touch_tol": 1.0,         # pts: within this of a level = touch
     "rearm_dist": 5.0,        # pts: price must get this far away before the next touch counts
@@ -188,8 +188,13 @@ def compute_levels(df: pd.DataFrame, spot: float, at: datetime) -> tuple[list[di
         levels.append({"level_type": kind, "price": round(float(price), 2),
                        "gex_bn": None if val is None else round(float(val) / 1e9, 3)})
 
-    add("call_wall", bs["C"].idxmax(), bs["C"].max())
-    add("put_wall", bs["P"].idxmin(), bs["P"].min())
+    # Walls sit on their own side of spot: call wall at/above, put wall at/below (FIX 2026-11-02:
+    # without this, a large ITM put stack above spot was being picked as the "put wall").
+    up, dn = bs[bs.index >= spot], bs[bs.index <= spot]
+    cw = up if len(up) else bs
+    pw = dn if len(dn) else bs
+    add("call_wall", cw["C"].idxmax(), cw["C"].max())
+    add("put_wall", pw["P"].idxmin(), pw["P"].min())
 
     zero = df[df["expiry"] == at.date()]
     if len(zero):
@@ -218,8 +223,11 @@ def compute_levels(df: pd.DataFrame, spot: float, at: datetime) -> tuple[list[di
 
     # Controls: random strikes (multiples of 5, like real strikes) placed at distances from spot
     # similar to the real levels, so the comparison is fair. Seeded by date so reruns match.
+    # FIX 2026-11-02: sample distances only from levels within the major band (+/-3%), so far-away
+    # walls don't push every control out of the day's range (Oct 29-30 controls got 0 touches).
     rng = random.Random(at.date().isoformat())
-    dists = [abs(l["price"] - spot) for l in levels] or [spot * 0.01]
+    dists = [abs(l["price"] - spot) for l in levels
+             if abs(l["price"] - spot) <= spot * CFG["major_band"]] or [spot * 0.01]
     taken = [l["price"] for l in levels]
     c = tries = 0
     while c < CFG["n_control"] and tries < 5000:
