@@ -1,6 +1,6 @@
 # SPX GEX touch log: summary
 
-Sessions logged: **4** (2026-10-29 to 2026-11-03). Touches: **29**. Updated 2026-11-03 16:23 ET.
+Sessions logged: **4** (2026-10-29 to 2026-11-03). Touches: **29**. Updated 2026-11-03 17:18 ET.
 
 GEX levels only earn a place if they clearly beat the **control** rows (random strikes) on reject rate and bounce vs. through, over a real sample. Treat any row with fewer than ~30 touches as noise.
 
