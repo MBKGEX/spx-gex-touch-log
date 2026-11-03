@@ -23,3 +23,8 @@ date,level_type,level_price,regime,touch_time,minute_of_session,approach,close_a
 2026-11-02,control_5,7565.0,negative,14:36,306,from_above,7565.42,reject,21,2.77,10.22,19.97,10.22,19.97,14.77,False
 2026-11-02,control_5,7565.0,negative,14:52,322,from_below,7565.34,break,9,2.49,19.97,2.49,19.97,22.59,19.97,False
 2026-11-02,control_5,7565.0,negative,15:27,357,from_above,7565.86,break,7,2.18,21.74,2.18,25.01,2.18,25.62,True
+2026-11-03,0dte_put_wall,7575.0,negative,10:41,71,from_below,7573.66,break,18,4.97,8.32,4.97,12.74,5.36,13.7,False
+2026-11-03,0dte_put_wall,7575.0,negative,11:22,112,from_above,7575.34,reject,2,7.22,5.36,7.22,6.48,7.22,6.48,False
+2026-11-03,0dte_put_wall,7575.0,negative,12:55,205,from_above,7577.24,reject,1,15.54,0.0,17.27,0.0,19.61,0.0,False
+2026-11-03,0dte_put_wall,7575.0,negative,14:11,281,from_above,7576.74,reject,8,8.36,0.84,8.36,3.97,8.36,15.64,False
+2026-11-03,0dte_put_wall,7575.0,negative,14:25,295,from_above,7576.84,break,28,4.37,3.97,4.37,14.52,4.37,15.64,False
