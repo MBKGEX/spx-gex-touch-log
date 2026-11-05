@@ -52,3 +52,8 @@ date,level_type,level_price,regime,touch_time,minute_of_session,approach,close_a
 2026-11-04,control_8,7695.0,negative,13:55,265,from_above,7694.77,reject,8,15.32,0.74,16.6,0.74,16.6,0.74,False
 2026-11-04,control_8,7695.0,negative,14:57,327,from_above,7695.84,reject,19,4.82,0.08,9.88,0.08,15.35,12.44,False
 2026-11-04,control_8,7695.0,negative,15:44,374,from_above,7696.26,break,11,3.88,12.44,3.88,12.44,3.88,12.44,True
+2026-11-05,put_wall,7600.0,positive,09:43,13,from_above,7601.11,break,5,2.44,49.24,2.44,80.57,2.44,133.8,False
+2026-11-05,major_2,7500.0,positive,10:24,54,from_above,7498.15,break,5,9.78,29.94,9.78,105.98,9.78,105.98,False
+2026-11-05,major_2,7500.0,positive,10:31,61,from_below,7507.37,reject,5,55.81,9.78,105.98,9.78,105.98,9.78,False
+2026-11-05,control_1,7560.0,positive,09:56,26,from_above,7562.81,reject,4,12.17,36.29,12.17,80.19,12.17,165.98,False
+2026-11-05,control_5,7525.0,positive,10:11,41,from_above,7523.71,reject,5,13.43,45.19,13.43,54.94,13.43,130.98,False
