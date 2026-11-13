@@ -160,3 +160,6 @@ date,level_type,level_price,regime,touch_time,minute_of_session,approach,close_a
 2026-11-12,control_5,7610.0,positive,09:53,23,from_below,7606.28,reject,1.0,28.45,1.0,29.0,1.0,29.0,3.39,False
 2026-11-12,control_5,7610.0,positive,10:51,81,from_below,7612.86,break,6.0,3.54,26.47,3.54,42.65,3.54,42.76,False
 2026-11-12,control_5,7610.0,positive,13:50,260,from_above,7611.4,reject,7.0,5.01,8.32,9.2,8.32,9.2,13.19,False
+2026-11-13,control_1,7540.0,negative,12:07,157,from_below,7538.95,reject,5,15.22,2.26,15.22,2.79,15.22,4.43,False
+2026-11-13,control_1,7540.0,negative,12:29,179,from_below,7537.78,reject,1,7.37,2.79,7.37,4.43,11.51,5.24,False
+2026-11-13,control_1,7540.0,negative,13:21,231,from_below,7536.13,reject,1,5.91,6.94,5.91,15.71,5.91,19.26,False
