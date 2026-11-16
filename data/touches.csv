@@ -163,3 +163,14 @@ date,level_type,level_price,regime,touch_time,minute_of_session,approach,close_a
 2026-11-13,control_1,7540.0,negative,12:07,157,from_below,7538.95,reject,5,15.22,2.26,15.22,2.79,15.22,4.43,False
 2026-11-13,control_1,7540.0,negative,12:29,179,from_below,7537.78,reject,1,7.37,2.79,7.37,4.43,11.51,5.24,False
 2026-11-13,control_1,7540.0,negative,13:21,231,from_below,7536.13,reject,1,5.91,6.94,5.91,15.71,5.91,19.26,False
+2026-11-16,0dte_call_wall,7465.0,negative,11:54,144,from_above,7466.17,reject,1,11.37,2.61,11.37,10.64,11.37,18.31,False
+2026-11-16,0dte_call_wall,7465.0,negative,12:03,153,from_above,7466.02,break,19,3.61,5.42,3.61,14.28,3.61,24.17,False
+2026-11-16,0dte_put_wall,7450.0,negative,12:26,176,from_above,7450.95,reject,1,7.17,1.92,7.17,3.31,7.17,18.23,False
+2026-11-16,major_2,7400.0,negative,14:47,317,from_above,7400.61,reject,2,27.41,0.0,27.41,0.0,27.41,0.0,False
+2026-11-16,control_2,7480.0,negative,11:00,90,from_above,7483.37,reject,1,8.28,12.37,8.6,12.37,8.6,16.13,False
+2026-11-16,control_2,7480.0,negative,11:18,108,from_below,7479.36,break,12,0.8,8.6,8.1,8.6,20.42,8.6,False
+2026-11-16,control_2,7480.0,negative,11:37,127,from_above,7475.36,break,10,2.24,12.52,2.24,16.13,2.24,29.75,False
+2026-11-16,control_7,7430.0,negative,13:27,237,from_above,7426.09,break,4,0.0,23.13,9.95,23.13,9.95,23.13,False
+2026-11-16,control_7,7430.0,negative,13:49,259,from_below,7433.31,break,4,3.24,9.95,5.32,9.95,29.85,9.95,False
+2026-11-16,control_7,7430.0,negative,13:55,265,from_above,7431.9,reject,1,9.46,4.64,9.46,10.17,9.46,29.85,False
+2026-11-16,control_7,7430.0,negative,14:00,270,from_above,7430.61,break,22,3.45,5.32,3.45,11.99,3.45,29.85,False
