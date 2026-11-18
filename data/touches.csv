@@ -203,3 +203,17 @@ date,level_type,level_price,regime,touch_time,minute_of_session,approach,close_a
 2026-11-17,control_2,7340.0,negative,13:35,245,from_above,7340.02,break,9.0,3.74,11.54,3.74,15.73,3.85,15.73,False
 2026-11-17,control_2,7340.0,negative,14:14,284,from_below,7340.62,reject,5.0,13.99,3.85,17.07,3.85,42.07,3.85,False
 2026-11-17,control_2,7340.0,negative,15:59,389,from_below,7340.63,chop,,0.0,0.63,0.0,0.63,0.0,0.63,True
+2026-11-18,0dte_call_wall,7350.0,negative,12:26,176,from_below,7347.71,reject,1,19.67,7.6,22.27,7.6,34.47,7.6,False
+2026-11-18,0dte_call_wall,7350.0,negative,13:31,241,from_below,7349.44,reject,3,8.33,6.26,11.94,6.26,31.71,6.26,False
+2026-11-18,0dte_call_wall,7350.0,negative,13:39,249,from_below,7349.89,reject,13,6.02,6.26,31.71,6.26,35.68,6.26,False
+2026-11-18,0dte_put_wall,7310.0,negative,10:40,70,from_above,7309.88,reject,11,8.19,8.48,16.09,8.48,16.09,24.24,False
+2026-11-18,0dte_put_wall,7310.0,negative,10:50,80,from_below,7313.37,reject,2,7.94,15.93,23.14,16.09,24.24,16.09,False
+2026-11-18,0dte_put_wall,7310.0,negative,11:12,102,from_above,7307.76,break,8,5.45,24.24,7.49,24.24,16.81,24.24,False
+2026-11-18,0dte_put_wall,7310.0,negative,11:24,114,from_below,7315.45,reject,2,12.82,7.49,19.74,7.49,20.62,32.68,False
+2026-11-18,0dte_put_wall,7310.0,negative,11:32,122,from_below,7308.07,reject,5,16.25,7.49,20.62,8.22,20.62,46.98,False
+2026-11-18,0dte_put_wall,7310.0,negative,11:59,149,from_below,7311.81,break,5,0.31,16.81,0.31,42.09,0.31,47.6,False
+2026-11-18,0dte_put_wall,7310.0,negative,12:13,163,from_above,7311.58,reject,1,41.95,0.0,47.6,0.0,47.6,0.0,False
+2026-11-18,major_1,7300.0,negative,11:17,107,from_above,7299.76,reject,7,15.45,14.24,17.49,14.24,28.28,14.24,False
+2026-11-18,major_1,7300.0,negative,11:27,117,from_above,7299.24,reject,2,17.49,6.25,17.49,10.62,50.93,10.62,False
+2026-11-18,major_1,7300.0,negative,11:39,129,from_above,7297.19,reject,11,6.59,9.74,26.81,10.62,57.6,10.62,False
+2026-11-18,major_1,7300.0,negative,11:58,148,from_below,7306.58,break,4,0.0,26.81,0.0,51.95,0.0,57.6,False
